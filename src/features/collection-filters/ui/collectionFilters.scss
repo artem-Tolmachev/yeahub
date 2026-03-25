@@ -1,0 +1,17 @@
+@use '../../../shared/styles/variables.scss' as *;
+
+.access-button{
+    svg {        
+        path {
+            transition: fill .3s ease-in-out;
+        }
+    }
+    &:hover {
+    svg {
+      path {
+        fill: var(--color-white);
+      }
+    }
+  }
+}
+

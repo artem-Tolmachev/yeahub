@@ -1,0 +1,38 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.surface {
+  border-radius: 16px;
+  background: var(--color-bg);
+
+  &--bcgr-light{
+    background-color: var(--color-white);
+  }
+
+  &--padding-sm {
+    padding: $space-xs-4;
+  }
+
+  &--padding-md {
+    padding: $space-md;
+  }
+
+  &--padding-lg {
+    padding: $space-md-2;
+  }
+
+  &--default {
+    border-radius: $radius-2xl;
+    box-shadow: 0px 4px 10px 0px #6A63761A;
+  }
+
+  &--elevated {
+    border-radius: $radius-2xl;
+    box-shadow: none;
+  }
+
+  &--outlined {
+    box-shadow: none;
+  }
+}

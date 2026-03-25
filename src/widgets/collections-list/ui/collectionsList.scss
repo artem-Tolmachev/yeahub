@@ -1,0 +1,55 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.collections-list{
+    flex-shrink: 1;
+    min-width: 0;
+    background-color: var(--color-white);
+    gap: $space-md;
+    @include flex-col();
+    
+    &__items{
+        gap: $space-md;
+        @include flex-col();
+    }
+    &__header{
+        border-bottom: 1px solid #E8E8E8;
+        padding-bottom: 17px;
+    }
+    &__title{
+        margin: 0;
+        @include manrope(500, $font-2xl);
+    }
+}
+
+.col-skeleton{
+    display: flex;
+    padding: $space-md;
+    box-shadow: 0px 4px 10px 0px #6A63761A;
+    gap: $space-md;
+
+    &__header{
+        padding-bottom: $space-sm-3;
+    }
+    &__right{
+        gap: $space-md;
+        @include flex-col()
+    }
+    &__title{
+        gap: $space-xs-4;
+        @include flex-col();
+    }
+    &__bages{
+        display: flex;
+        gap: $space-sm-2;
+    }
+    &__meta{
+        display: flex;
+        gap: $space-md;
+    }
+    &__spec{
+        display: flex;
+        gap: $space-sm-2;
+    }
+}

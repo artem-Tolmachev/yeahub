@@ -1,0 +1,50 @@
+@use '../../styles/variables.scss' as *;
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/global.scss' as *;
+
+
+
+.accordion{
+    &__unwrapp{
+        transition: visibility .3s ease-in-out, opacity .3s ease-in-out, height .3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+    &__wrapp{
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__text{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: var(--color-black);
+        @include manrope(500, $font-2xl);
+    }
+    
+    &__btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: none;
+        background-color: var(--color-white);
+        cursor: pointer;
+        transition: margin .3s ease-in-out;
+        &--mrg{
+            margin-bottom: 24px;
+        }
+    }
+    &__text::before{
+        display: inline-block;
+        margin-right: $space-xs-4;
+        content: '';
+        width: 8px;
+        height: 8px;
+        min-width: 8px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+    }
+}

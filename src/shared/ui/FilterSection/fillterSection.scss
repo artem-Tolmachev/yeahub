@@ -1,0 +1,19 @@
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.filter-section{
+    display: flex;
+    gap: $space-xs-4;
+    @include flex-col();
+    &__title{
+        @include manrope(400, $font-sm);
+        margin-bottom: 8px;
+        line-height: 120%;
+        color: var(--color-text);
+    }
+    &__chips{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-xs-4;
+    }
+}

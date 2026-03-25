@@ -1,0 +1,21 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.keywords-list{
+    display: flex;
+    gap: $space-sm-2;
+
+    &__item{
+        padding: 3px 8px;
+        background-color: #EDF7EF;
+        color: #008616;
+        border-radius: 30px;
+        line-height: 120%;
+        width: fit-content;
+        @include manrope(600, $space-sm-1);
+    }
+    &__spec{
+        
+    }
+}

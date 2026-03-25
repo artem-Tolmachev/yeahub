@@ -1,0 +1,21 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.collection-ditalis{
+    padding-top: $space-lg-5;
+    display: flex;
+
+    &__questions{
+        gap: $space-md;
+        @include flex-col();
+    }
+    &__container{
+        display: flex;
+        gap: $space-md;
+    }
+    &__wr{
+        gap: $space-md;
+        @include flex-col(); 
+    }
+}

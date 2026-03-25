@@ -1,0 +1,11 @@
+@use '../../../shared/styles/global.scss' as *; 
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.colections-page{
+    padding-top: $space-lg-5;
+
+    &__container{
+        gap: $space-md;
+    }
+}

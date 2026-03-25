@@ -1,0 +1,71 @@
+@use '../../../shared/styles/global.scss' as *;
+@use '../../../shared/styles/mixins.scss' as *;
+@use '../../../shared/styles/variables.scss' as *;
+
+.collection-card{
+    min-width: 764px;
+    cursor: pointer;
+    &__image-wr{
+        @extend .img-wrapper
+    }
+    &__title{
+        line-height: 130%;
+        color: var(--color-text-secondary);
+        @include manrope(500, $font-md);
+    }
+    &__content{
+        display: flex;
+        gap: $space-md;
+
+        &-inner{
+            @include flex-col();
+            gap: $space-md;
+        }
+    }
+    &__spec{
+        line-height: 130%;
+        color: #757575;
+        @include manrope(400, $font-md);
+    }
+    &__inf{
+        gap: $space-md;
+        @include flex-center-y();
+    }
+    &__badge{
+        color: var(--color-primary);
+        line-height: 120%;
+        @include manrope(400, $font-sm);
+
+        &--meta{
+            @include flex-center-y();
+            gap: $space-xs-2;
+        }
+    }
+}
+
+.ditails-card{
+    background-color: var(--color-white);
+    
+    &__image-wr{
+        @extend .img-wrapper
+    }
+    &__content{
+        display: flex;
+        gap: $space-md;
+    }
+    &__content-inner{
+        max-width: 585px;
+        gap: $space-xs-4;
+        @include flex-col();
+    }
+    &__title{
+        line-height: 130%;
+        color: var(--color-text-secondary);
+        @include manrope(500, $font-md);
+    }
+    &__descr{
+        line-height: 130%;
+        color: var(--color-text-secondary);
+        @include manrope(500, $font-md);
+    }
+}
